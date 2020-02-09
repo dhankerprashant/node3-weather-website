@@ -2,7 +2,6 @@ const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
 const forecast = require('./forecast')
-
 const app = express()
 
 // Define paths for Express config
@@ -21,7 +20,7 @@ app.use(express.static(publicDirectoryPath))
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather',
-        name: 'Prashant'
+        name: 'Prashant Kumar'
     })
 })
 
